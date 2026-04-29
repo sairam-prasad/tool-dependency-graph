@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+
+# Local toolchain (project-local Bun install)
+.venv/
+
+# Dependencies
+node_modules/
+
+# Session log bundle (created by upload.sh, not source)
+agent-sessions/
+
+# Build artifacts / caches
+*.tsbuildinfo
+dist/
+.cache/
+.next/
+
+# OS / editor
+.DS_Store
+.vscode/
+.claude/
+*.log
+
+# Submission artifacts
+project.zip
+*.zip

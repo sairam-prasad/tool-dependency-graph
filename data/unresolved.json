@@ -1,0 +1,578 @@
+[
+  {
+    "tool": "GOOGLESUPER_CREATE_CUSTOM_DIMENSION",
+    "param": "displayName",
+    "description": "Required. Display name for this custom dimension as shown in the Analytics UI. Max length of 82 characters, alphanumeric plus space and underscore starting with a letter",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_CUSTOM_DIMENSION",
+    "param": "parameterName",
+    "description": "Required. Immutable. Tagging parameter name for this custom dimension. For user-scoped dimensions, this is the user property name. For event-scoped dimensions, this is the event parameter name. For item-scoped dimensions, this is the parameter name in the eCommerce items array. May only contain alphanumeric and underscore characters, starting with a letter. Max length of 24 characters for user-scoped dimensions, 40 characters for event-scoped dimensions",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_CUSTOM_METRIC",
+    "param": "displayName",
+    "description": "Required. Display name for this custom metric as shown in the Analytics UI. Max length of 82 characters, alphanumeric plus space and underscore starting with a letter.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_CUSTOM_METRIC",
+    "param": "parameterName",
+    "description": "Required. Immutable. Tagging name for this custom metric. If this is an event-scoped metric, then this is the event parameter name. May only contain alphanumeric and underscore characters, starting with a letter. Max length of 40 characters for event-scoped metrics.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_NAMED_RANGE",
+    "param": "name",
+    "description": "The name for the new named range. Must be 1-256 characters.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_ROLLUP_PROPERTY",
+    "param": "displayName",
+    "description": "Required. Display name for the roll-up property.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_CREATE_SHORTCUT_TO_FILE",
+    "param": "name",
+    "description": "The name of the shortcut.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_END_ACTIVE_CONFERENCE",
+    "param": "space_name",
+    "description": "REQUIRED. Resource name of the space in the format 'spaces/{space}' where {space} is a unique, case-sensitive server-generated ID. Example: 'spaces/jQCFfuBOdN5z'. This can be the full resource name including the 'spaces/' prefix or just the space ID. You must always provide this parameter.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_ACCOUNT",
+    "param": "name",
+    "description": "Required. The resource name of the Account to retrieve. Must be in the exact format: accounts/{account_id} where account_id is a numeric identifier. IMPORTANT: Must start with 'accounts/' prefix, contain no forward slashes in the account_id, have no trailing slashes, and no additional path segments. Valid example: 'accounts/100'. Invalid examples: '100' (missing prefix), 'accounts/100/' (trailing slash), 'accounts/100/extra' (extra segments)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_APP",
+    "param": "appId",
+    "description": "The ID of the app. Use 'self' to refer to the calling app.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_ATTRIBUTION_SETTINGS",
+    "param": "name",
+    "description": "Required. The resource name of the attribution settings to retrieve. Must be in the exact format: properties/{property_id}/attributionSettings where property_id is a numeric identifier. IMPORTANT: Must start with 'properties/' prefix, contain no forward slashes in the property_id, have no trailing slashes, and must end with '/attributionSettings'. Valid example: 'properties/489591273/attributionSettings'. Invalid examples: '489591273' (missing prefix), 'properties/489591273' (missing suffix), 'properties/489591273/attributionSettings/' (trailing slash)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_CAMPAIGN_BY_NAME",
+    "param": "name",
+    "description": "name of the campaign to search on GoogleAds. Matched using exact SQL equality; paused or inactive campaigns may return no results — an empty result means no matching active campaign was found.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_CONFERENCE_RECORD_BY_NAME",
+    "param": "name",
+    "description": "Required. Resource name of the conference record. Format: 'conferenceRecords/{conference_record}' where {conference_record} is a unique ID for each instance of a call within a space. Example: 'conferenceRecords/GLkPdCDLsjSXet2-QH9dDxIPOAIIigIgABgECA'",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_CUSTOM_DIMENSION",
+    "param": "name",
+    "description": "Required. The resource name of the CustomDimension to retrieve. Must be in the exact format: properties/{property_id}/customDimensions/{customDimension_id} where both property_id and customDimension_id are numeric identifiers. IMPORTANT: Must start with 'properties/' prefix, contain exactly one '/customDimensions/' segment, have no trailing slashes, and no additional path segments. Valid example: 'properties/489591273/customDimensions/13661238280'. Invalid examples: '489591273/13661238280' (missing prefix), 'properties/489591273/customDimensions/13661238280/' (trailing slash), 'properties/489591273/customDimensions/13661238280/extra' (extra segments)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_DATA_RETENTION_SETTINGS",
+    "param": "name",
+    "description": "Required. The resource name of the data retention settings to retrieve. Must be in the exact format: properties/{property_id}/dataRetentionSettings where property_id is a numeric identifier. IMPORTANT: Must start with 'properties/' prefix, contain no forward slashes in the property_id, have no trailing slashes, and must end with '/dataRetentionSettings'. Valid example: 'properties/489591273/dataRetentionSettings'. Invalid examples: '489591273' (missing prefix), 'properties/489591273' (missing suffix), 'properties/489591273/dataRetentionSettings/' (trailing slash)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_DATA_SHARING_SETTINGS",
+    "param": "name",
+    "description": "Required. The resource name of the data sharing settings to retrieve. Must be in the exact format: accounts/{account_id}/dataSharingSettings where account_id is a numeric identifier. IMPORTANT: Must start with 'accounts/' prefix, contain no forward slashes in the account_id, have no trailing slashes, and must end with '/dataSharingSettings'. Valid example: 'accounts/1000/dataSharingSettings'. Invalid examples: '1000' (missing prefix), 'accounts/1000' (missing suffix), 'accounts/1000/dataSharingSettings/' (trailing slash)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_GOOGLE_SIGNALS_SETTINGS",
+    "param": "name",
+    "description": "Required. The resource name of the Google Signals settings to retrieve. Must be in the exact format: properties/{property_id}/googleSignalsSettings where property_id is a numeric identifier. IMPORTANT: Must start with 'properties/' prefix, contain no forward slashes in the property_id, have no trailing slashes, and must end with '/googleSignalsSettings'. Valid example: 'properties/1000/googleSignalsSettings'. Invalid examples: '1000' (missing prefix), 'properties/1000' (missing suffix), 'properties/1000/googleSignalsSettings/' (trailing slash)",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_MEET",
+    "param": "space_name",
+    "description": "The unique identifier (space ID) for the Google Meet space. Provide only the raw space ID without the 'spaces/' prefix. Example: 'mV63iV9-KxoB'.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_METADATA",
+    "param": "name",
+    "description": "Resource name of the metadata to retrieve. Format: properties/{property_id}/metadata. Use property_id=0 to return only universal (non-custom) metadata.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_PAGE_THUMBNAIL2",
+    "param": "pageObjectId",
+    "description": "The object ID of the page whose thumbnail to retrieve.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_GET_TRANSCRIPT",
+    "param": "name",
+    "description": "Required. Resource name of the transcript. Format: 'conferenceRecords/{conferenceRecord}/transcripts/{transcript}'. You can obtain this from the 'Get Transcripts by Conference Record ID' action or construct it using known conference record and transcript IDs.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LIST_EVENT_CREATE_RULES",
+    "param": "parent",
+    "description": "Required. Resource name of the parent data stream. Format: properties/{propertyId}/dataStreams/{dataStreamId}.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LIST_HISTORY",
+    "param": "start_history_id",
+    "description": "Required. Returns history records after this ID. If the ID is invalid or too old, the API returns 404. Perform a full sync in that case. Should be a numeric string. On 404 (historyIdTooOld) or 400 (invalidArgument), recover by fetching a fresh historyId via GMAIL_GET_PROFILE, then perform a one-time full sync via GMAIL_FETCH_EMAILS before resuming incremental calls.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LIST_RECORDINGS",
+    "param": "parent",
+    "description": "Required. The conference record to list recordings for. Format: conferenceRecords/{conference_record}",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LIST_SK_AD_NETWORK_CONVERSION_VALUE_SCHEMAS",
+    "param": "parent",
+    "description": "Required. The DataStream resource to list schemas for. Format: properties/{property_id}/dataStreams/{dataStream}. Example: 'properties/123456789/dataStreams/1234567890'",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LIST_TRANSCRIPT_ENTRIES",
+    "param": "transcript_id",
+    "description": "The unique identifier of the transcript within the conference record.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_LOOKUP_SPREADSHEET_ROW",
+    "param": "query",
+    "description": "Exact text value to find; matches the entire content of a cell in a row.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_PRESENTATIONS_COPY_FROM_TEMPLATE",
+    "param": "template_presentation_id",
+    "description": "The Drive file ID of the Slides template to copy. This is the presentationId of the existing deck you want to duplicate.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_PRESENTATIONS_PAGES_GET",
+    "param": "pageObjectId",
+    "description": "The object ID of the page to retrieve.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_SEARCH_PEOPLE",
+    "param": "query",
+    "description": "Matches contact names, nicknames, email addresses, phone numbers, and organization fields.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_SEARCH_STREAM_GAQL",
+    "param": "query",
+    "description": "The Google Ads Query Language (GAQL) query string. Must follow SELECT ... FROM ... WHERE ... format. Example: SELECT campaign.name, campaign.id, metrics.impressions FROM campaign WHERE campaign.status = 'ENABLED'",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_SEND_EVENTS",
+    "param": "client_id",
+    "description": "Required. A unique identifier for a user/client. This should be a UUID or similar unique string that identifies a specific user across sessions. Maximum 256 characters.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_SPREADSHEETS_SHEETS_COPY_TO",
+    "param": "destination_spreadsheet_id",
+    "description": "The ID of the spreadsheet to copy the sheet to.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_UPDATE_SPACE",
+    "param": "name",
+    "description": "REQUIRED. The unique identifier of the Google Meet space to update. Format: 'spaces/{space}' where {space} is the space ID.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_UPLOAD_FROM_URL",
+    "param": "source_url",
+    "description": "URL of the file to download and upload to Google Drive. Must be a publicly accessible URL or include necessary authentication in source_headers.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GOOGLESUPER_VALIDATE_EVENTS",
+    "param": "client_id",
+    "description": "Required. Unique client identifier. This uniquely identifies a user instance of a web client.",
+    "toolkit": "googlesuper"
+  },
+  {
+    "tool": "GITHUB_ABORT_REPOSITORY_MIGRATION",
+    "param": "migrationId",
+    "description": "The ID of the repository migration to abort. This is the migration ID returned when a migration was queued (e.g., 'RM_kgDOABCDEF').",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_A_GITHUB_PAGES_DEPLOYMENT",
+    "param": "oidc_token",
+    "description": "OIDC token from GitHub Actions for deployment authorization, typically from `secrets.GITHUB_TOKEN` with `id-token: write` permission.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_AN_ORGANIZATION_WEBHOOK",
+    "param": "config__url",
+    "description": "Required. The target URL for webhook payload delivery. This URL is a mandatory part of the webhook's `config` object and will receive POST requests for subscribed events.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_A_SCOPED_ACCESS_TOKEN",
+    "param": "client_id",
+    "description": "Client ID of the GitHub App.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_A_SCOPED_ACCESS_TOKEN",
+    "param": "access_token",
+    "description": "User-to-server access token to be exchanged for a new scoped token.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_A_TEMPORARY_PRIVATE_FORK",
+    "param": "ghsa_id",
+    "description": "Identifier for the GitHub Security Advisory (e.g., GHSA-rfv9-x7w6-39px) that the fork will address.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_JIT_RUNNER_CONFIG",
+    "param": "runner_group_id",
+    "description": "The unique identifier of the runner group to which the new runner will be assigned. Use 0 for the default group or the ID of a specific runner group.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_CREATE_OR_UPDATE_CUSTOM_PROPERTY_ORG",
+    "param": "custom_property_name",
+    "description": "Name of the custom property (case-sensitive).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_DELETE_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the webhook. This ID can be found in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_DELETE_PACKAGE_VERSION",
+    "param": "package_version_id",
+    "description": "The global node ID of the package version to delete (e.g., 'MDEyOlBhY2thZ2VWZXJzaW9uMQ=='). This is the GraphQL ID, not the numeric REST API ID.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_FIND_REPOSITORIES",
+    "param": "query",
+    "description": "Search query for repository name, description, or README content. Accepts both 'query' and 'q' as parameter names. Supports OR operator for alternatives (e.g., 'bug OR error'). Multi-word phrases in OR expressions are automatically quoted. GitHub limits OR expressions to 6 terms maximum; queries exceeding this limit are truncated. If using GitHub qualifiers like 'repo:', 'user:', or 'org:', they must be properly formatted (e.g., 'repo:owner/name', 'user:username', 'org:orgname'). Note: 'owner:' is not a valid GitHub qualifier; if used, it will be automatically transformed to 'user:'. Must be non-empty; blank strings trigger a 'Search query cannot be empty' validation error.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_AN_ORGANIZATION_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the webhook. You can find this value in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_PACKAGE_VERSION_FOR_AN_ORGANIZATION",
+    "param": "package_version_id",
+    "description": "Unique ID of the package version.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_PACKAGE_VERSION_FOR_A_USER",
+    "param": "package_version_id",
+    "description": "The unique numeric identifier of the specific package version. Obtain this ID by first listing package versions using the 'list_package_versions_for_a_package_owned_by_a_user' action.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_PACKAGE_VERSION_FOR_THE_AUTHENTICATED_USER",
+    "param": "package_version_id",
+    "description": "The unique numerical identifier (ID) of the specific package version.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_REPOSITORY_RULE_SUITE",
+    "param": "rule_suite_id",
+    "description": "The unique identifier of the rule suite. To obtain this ID, you can list rule suites for the repository (e.g., via `GET /repos/{owner}/{repo}/rulesets/rule-suites`) or organization (e.g., via `GET /orgs/{org}/rulesets/rule-suites`).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the hook. You can find this value in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_WEBHOOK_CONFIGURATION_FOR_AN_ORGANIZATION",
+    "param": "hook_id",
+    "description": "Unique ID of the webhook (see `X-GitHub-Hook-ID` header in webhook deliveries).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_WEBHOOK_CONFIGURATION_FOR_A_REPOSITORY",
+    "param": "hook_id",
+    "description": "The unique identifier of the hook. You can find this value in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_A_WEBHOOK_DELIVERY_FOR_AN_ORGANIZATION_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the organization webhook. This ID can be found in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_CHECK_RUN",
+    "param": "check_run_id",
+    "description": "The unique numerical identifier of the check run.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_CHECK_SUITE",
+    "param": "check_suite_id",
+    "description": "The unique identifier of the check suite.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_CODE_SCANNING_ANALYSIS",
+    "param": "analysis_id",
+    "description": "Unique ID of the code scanning analysis, obtained by listing all analyses for the repository.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_CUSTOM_DEPLOYMENT_PROTECTION_RULE",
+    "param": "protection_rule_id",
+    "description": "The unique identifier of the custom deployment protection rule. Get this ID from GITHUB_GET_ALL_DEPLOYMENT_PROTECTION_RULES_FOR_AN_ENVIRONMENT action.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_DEPLOYMENT_BRANCH_POLICY",
+    "param": "branch_policy_id",
+    "description": "The unique identifier of the branch policy.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_DETAILS_ABOUT_A_CODESPACE_EXPORT",
+    "param": "export_id",
+    "description": "The ID of the export operation. Currently, only 'latest' is supported, which refers to the most recent export for the specified codespace.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_GLOBAL_SECURITY_ADVISORY",
+    "param": "ghsa_id",
+    "description": "The GHSA (GitHub Security Advisory) identifier of the advisory.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_INFORMATION_ABOUT_A_SARIF_UPLOAD",
+    "param": "sarif_id",
+    "description": "Unique identifier of the SARIF upload, returned when a SARIF file is successfully uploaded.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_ORGANIZATION_CUSTOM_PROPERTY",
+    "param": "custom_property_name",
+    "description": "Name of the custom property to retrieve (case-sensitive).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_REPOS_ATTESTATIONS",
+    "param": "subject_digest",
+    "description": "The parameter should be set to the attestation's subject's SHA256 digest, in the form `sha256:HEX_DIGEST`.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_REPOSITORY_SECURITY_ADVISORY",
+    "param": "ghsa_id",
+    "description": "The GHSA (GitHub Security Advisory) identifier of the advisory.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_REPOSITORY_WEBHOOK_DELIVERY",
+    "param": "hook_id",
+    "description": "The unique identifier of the webhook. You can find this value in the `X-GitHub-Hook-ID` header of a webhook delivery, or by listing repository webhooks.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_GET_USERS_ATTESTATIONS",
+    "param": "subject_digest",
+    "description": "Subject digest for the attestation. Must include the algorithm prefix (e.g., 'sha256:' or 'sha512:').",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_CHECK_RUN_ANNOTATIONS",
+    "param": "check_run_id",
+    "description": "The unique identifier of the check run for which annotations are to be listed.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_CHECK_RUNS_IN_A_CHECK_SUITE",
+    "param": "check_suite_id",
+    "description": "Numeric ID of the check suite.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_DELIVERIES_FOR_AN_ORGANIZATION_WEBHOOK",
+    "param": "hook_id",
+    "description": "Unique identifier of the webhook.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_DELIVERIES_FOR_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the webhook. This ID can be found in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_JOBS_FOR_A_WORKFLOW_RUN_ATTEMPT",
+    "param": "attempt_number",
+    "description": "Attempt number of the workflow run, corresponding to a specific retry.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_REPO_ACCESS_BY_TOKEN",
+    "param": "pat_request_id",
+    "description": "Unique identifier of the request for access via fine-grained personal access token. Obtain this from the 'List PAT grant requests' endpoint.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LIST_TOKEN_ACCESS_REPOSITORIES",
+    "param": "pat_id",
+    "description": "The unique numeric identifier of the fine-grained personal access token. You can obtain this ID from the 'list_org_resource_access_tokens' action.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LOOKUP_ENTERPRISE_ADMINISTRATOR_INVITATION",
+    "param": "enterprise_slug",
+    "description": "The slug of the enterprise the user was invited to join. This is the URL-friendly identifier for the enterprise.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_LOOKUP_TOPIC_BY_NAME",
+    "param": "name",
+    "description": "The topic's name to look up (e.g., 'python', 'javascript', 'machine-learning').",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_PING_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "The unique identifier of the hook. You can find this value in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_REDELIVER_A_DELIVERY_FOR_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "Unique identifier of the webhook (e.g., from `X-GitHub-Hook-ID` header or by listing repository webhooks).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_RUN_GRAPH_QL_QUERY",
+    "param": "query",
+    "description": "GraphQL query or mutation string. Must comply with GitHub's GraphQL v4 schema.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_RUN_GRAPH_QL_RELAY_QUERY",
+    "param": "query",
+    "description": "GraphQL query string to execute within the relay context. Must comply with GitHub's GraphQL v4 schema. The relay field re-exposes the root Query object, allowing you to nest any valid root query fields.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_CODE",
+    "param": "q",
+    "description": "Code search query, including keywords and qualifiers (e.g., `language:python`, `user:octocat`, `repo:owner/repo`). For full syntax and qualifiers, see GitHub docs: [Constructing a search query](https://docs.github.com/rest/search/search#constructing-a-search-query) and [code search qualifiers](https://docs.github.com/search-github/searching-on-github/searching-code).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_CODE_ALL_PAGES",
+    "param": "q",
+    "description": "The search query string for code search. **IMPORTANT**: While GitHub's documentation mentions boolean operators (AND, OR, NOT) support, the REST API still uses older syntax that frequently rejects queries with operators or parentheses (ERROR_TYPE_QUERY_PARSING_FATAL). For reliable searches, avoid boolean operators and parentheses. Supports qualifiers: `language:`, `repo:`, `path:`, `extension:`, `user:`, `org:`, `in:file`. Multiple terms use implicit AND: `hello world` finds both. Quote exact phrases: `\"exact phrase\"`. For complex boolean logic, use multiple separate API calls or the GitHub web interface.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_COMMITS",
+    "param": "q",
+    "description": "Search query with at least one text keyword plus optional qualifiers. GitHub requires actual search text (commit message keywords) - qualifiers alone are not allowed. Common qualifiers: 'repo:owner/name', 'author:username', 'committer:username', 'author-date:YYYY-MM-DD' or 'author-date:>YYYY-MM-DD..YYYY-MM-DD', 'committer-date:YYYY-MM-DD', 'merge:true/false', 'hash:HASH', 'parent:HASH', 'tree:HASH'. IMPORTANT: The 'hash:' qualifier requires a full 40-character hexadecimal commit hash (e.g., 'hash:e5bd3914e2e596debea16f433f57875b5b90bcd6'). Do NOT use branch names, tag names, or short refs with 'hash:' - use 'repo:owner/name' with other filters to search commits on a specific branch.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_COMMITS_BY_AUTHOR",
+    "param": "q",
+    "description": "GitHub search query for commits. IMPORTANT: Must include search text (keywords) in addition to qualifiers. Qualifier-only queries are not allowed by the GitHub API. Supports qualifiers like author:, committer-email:, org:, repo:, author-date:, committer-date:, merge:, hash:, parent:, tree:, is:public/private. Examples: 'fix author:octocat', 'bug repo:owner/repo', 'update author:octocat author-date:>=2025-01-01'. If only qualifiers are provided, a wildcard search term will be automatically added.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_GITHUB_GRAPHQL",
+    "param": "query",
+    "description": "The search query string using GitHub search syntax. Supports qualifiers like 'repo:', 'org:', 'user:', 'is:open', 'is:closed', 'label:', etc. For issues/PRs, use 'is:issue' or 'is:pr'. For repositories, search by name, description, or topics. Maximum 1,000 results can be retrieved across all pages.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_ISSUES_AND_PULL_REQUESTS",
+    "param": "q",
+    "description": "Search query using GitHub's search syntax. Supports keywords, qualifiers (repo:, org:, user:, state:, label:, author:, assignee:, mentions:, etc.), and type filters (is:issue, is:pr). IMPORTANT: Type filters (is:issue, is:pr) cannot be used alone - they must be combined with at least one keyword or other qualifier. All other qualifiers work independently (e.g., 'state:open', 'label:bug', 'assignee:octocat'). The @me shorthand (e.g., assignee:@me, mentions:@me, author:@me) can be used to reference the authenticated user. Logical operators (AND, OR, NOT) can be used to combine terms (maximum 5 operators total).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_LABELS",
+    "param": "q",
+    "description": "The search keywords or query to find labels. This endpoint does not accept qualifiers in the query. For more details on query construction, refer to GitHub's documentation on [Constructing a search query](https://docs.github.com/rest/search/search#constructing-a-search-query).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_REPOSITORIES",
+    "param": "q",
+    "description": "REQUIRED non-empty search query. Max 5 AND/OR/NOT operators. Qualifiers: `language:LANG`, `stars:N`, `stars:>N`, `forks:N`, `size:N` (KB), `topic:TOPIC`, `license:LICENSE`, `created:DATE`, `pushed:DATE`, `is:public|private`, `archived:true|false`, `in:name|description|readme`, `user:USERNAME`, `org:ORGNAME`. Must use real GitHub usernames/orgs (e.g., `user:octocat`), not placeholders. Queries with logical operators must include at least one plain keyword; `topic:solana OR topic:ethereum` fails, use `solana OR ethereum stars:>100` instead.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_TOPICS",
+    "param": "q",
+    "description": "Search query string. Supports keywords, qualifiers, and GitHub's search syntax; see [Constructing a search query](https://docs.github.com/rest/search/search#constructing-a-search-query).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_SEARCH_USERS",
+    "param": "q",
+    "description": "Search query string supporting keywords and qualifiers for user attributes (e.g., `username`, `location`, `followers`). See examples for syntax.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_UPDATE_A_REPOSITORY_WEBHOOK",
+    "param": "hook_id",
+    "description": "Unique identifier of the webhook (found in `X-GitHub-Hook-ID` header of a delivery).",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_UPDATE_ISSUE_TYPE",
+    "param": "issue_type_id",
+    "description": "The unique identifier of the issue type to update.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_UPDATE_REPOSITORY_WEBHOOK_CONFIGURATION",
+    "param": "hook_id",
+    "description": "Unique identifier of the webhook, typically found in the `X-GitHub-Hook-ID` header of a webhook delivery.",
+    "toolkit": "github"
+  },
+  {
+    "tool": "GITHUB_UPDATE_SUBSCRIPTION",
+    "param": "subscribableId",
+    "description": "The Node ID of the subscribable object (issue, pull request, discussion, etc.) to modify. This is a global GraphQL ID, not a repository-local number.",
+    "toolkit": "github"
+  }
+]

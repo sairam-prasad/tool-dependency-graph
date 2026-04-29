@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "fetch": "bun run src/fetch-tools.ts",
+    "profiles": "bun run src/build-profiles.ts",
+    "heuristic": "bun run src/heuristic-edges.ts",
+    "refine": "bun --env-file=.env run src/llm-refine.ts",
+    "assemble": "bun run src/assemble-graph.ts",
+    "all": "bun run fetch && bun run profiles && bun run heuristic && bun run refine && bun run assemble",
+    "serve": "cd public && python3 -m http.server 8765"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.87",
+    "@composio/core": "^0.8.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@types/bun": "^1.3.11"
+  }
+}
